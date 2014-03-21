@@ -17,8 +17,8 @@ There's something I've been working on recently, at start just for fun but it tu
 To try it, it's as simple as:
 
 {% highlight bash %}
-$ sudo pip install butterfly # Install butterfly
-$ butterfly.server.py        # Launch the web server
+$ sudo pip install butterfly      # Install butterfly
+$ butterfly.server.py --unsecure  # Launch the web server unsecure
 {% endhighlight %}
 
 Then all you have to do is go to : [localhost:57575](http://localhost:57575)
@@ -87,7 +87,7 @@ This is a feature I've always wanted to find in a terminal, quick history select
 
 * The scroll-back is actually limited to 100 000 lines as of now in order to limit the memory footprint. It would be a good idea to store the scroll-back on the disk using the server.
 
-* Embedding html directly into the terminal is possible and partially supported with the `ESC]99;<html>BELL` command. It can lead to some [interesting features](https://github.com/paradoxxxzero/butterfly/tree/master/bin).
+* Embedding html directly into the terminal is possible and **edit: not supported anymore** with the `ESC]99;<html>BELL` command for security reasons.
 
 * 16.7 millions of color is not yet supported but it's one hack away using the `ESC[38;2;r;g;bm` escape.
 * An in-terminal css/js editing options with why not a package repository for theme and extensions.
