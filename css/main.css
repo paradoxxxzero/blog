@@ -25,6 +25,11 @@ nav.navbar {
   margin-bottom: 1em;
 }
 
+.rss {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 /* Custom style for pages */
 .post.butterfly img {
   width: 60%;
