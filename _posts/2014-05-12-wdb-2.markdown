@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "wdb 2.0 the python debugger in your web browser"
+tags: [projects, wdb, debugger, python, websocket]
+class: wdb
+---
+
+I released wdb 2.0 this morning with a lot of fixes and features added.
+
+
+![wdb screen cast](/assets/wdb.gif)
+#### **wdb** debugging itself <small>(colors are awful due to gif compression)</small>
+
+
+## Introduction
+
+For those who don't know the project, **wdb** is a python debugger like [pdb](https://docs.python.org/3/library/pdb.html), but with a slick web front-end and a lot of additional features, such as:
+
+ * Source syntax highlighting
+ * Visual breakpoints
+ * Interactive code completion using [jedi](http://jedi.jedidjah.ch/)
+ * Persistent breakpoints
+ * Deep objects inspection using mouse
+ * Multithreading / Multiprocessing support
+ * Remote debugging
+ * Watch expressions
+ * In debugger code edition
+ * Popular web servers integration to break on error
+ * In exception breaking during trace (not post-mortem) in contrary to the werkzeug debugger for instance
+ * Breaking in currently running programs through code injection (on supported systems)
+
+This project started because I wanted to improve the werkzeug debugger and it ended up as a whole project.
+
+**wdb** supports python 2.6, 2.7, 3.2, 3.3, 3.4 and pypy.
+
+## Try it
+
+Enough with the introduction, let's just try it.
+
+```bash
+    $ pip install wdb.server      # Install both debugging client and server
+    $ wdb.server.py &             # Start the server as a background process
+    $ python -m wdb your_file.py  # Start debugging your_file.py
+```
+
+With the last command, your default web browser should open with the debugger paused at the first executable line of your file. You can get some help by typing `.h` in the prompt. But for the basic commands:
+
+ * `.s or [Ctrl] + [↓] or [F11]` : Step into
+ * `.n or [Ctrl] + [→] or [F10]` : Step over (Next)
+ * `.r or [Ctrl] + [↑] or [F9] ` : Step out (Return)
+ * `.c or [Ctrl] + [←] or [F8] ` : Continue
+ * `.u or [F7]                 ` : Until (Next over loops)
+ * `.h                         ` : Get some help
+ * `.q                         ` : Quit
+
+While the server is running, you can access the following url [localhost:1984/](http://localhost:1984/) to have an overview of currently opened debugging sessions, global breakpoints and running python process (which you may pause see [here](https://github.com/Kozea/wdb#wdb-server) for more information).
+
+Wdb can also be used just like pdb, by putting:
+
+```python
+    import wdb
+    wdb.set_trace()
+```
+
+anywhere in your code, where you want it to pause.
+
+## Upgrade from v1.x
+
+To upgrade to wdb 2.0 you need to run:
+
+```bash
+    $ pip install wdb.server
+    $ pip install --upgrade wdb
+```
+
+This is because now the package is split between the server and the debugging client to avoid unneeded dependencies installed in virtualenvs or other python versions (once the server is installed and running you just have to install `wdb` in your virtualenvs).
+
+## More
+
+For more detailed instructions and other features please read the `README.md` on the github page: [github.com/Kozea/wdb](https://github.com/Kozea/wdb)
+
+As always, you are more than welcome to contribute to the project (GPLv3), by adding new features, creating themes or supporting me financially see [about page](/about/) *(Encouraged!)*
