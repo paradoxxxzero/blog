@@ -5,7 +5,7 @@ title: About
 
 ### Who am I ?
 
-My name is Florian Mounier, I'm 27 and I live in Lyon, France.
+My name is Florian Mounier, I'm 28 and I live in Lyon, France.
 
 I work at [kozea](http://kozea.fr/) and I graduated from [INSA Lyon](http://www.groupe-insa.fr/en) in 2009.
 
