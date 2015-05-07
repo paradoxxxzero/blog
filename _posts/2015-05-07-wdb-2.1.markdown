@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "wdb 2.1 new features and a new clean theme"
+tags: [projects, wdb, debugger, python, websocket]
+class: wdb
+---
+
+Hi everybody!
+
+
+wdb 2.1 is here with a new more serious light theme:
+
+![wdb light theme](/assets/wdb21_light.png)
+
+and some new features:
+
+  * New completion mechanism, should complete a lot better
+  * Experimental object tree search (`.f` command) to look for a key or a value condition in an object
+  * Media display in debugger (`.i` command)
+  * New diff function to print differences between string / obj / files (`.x` command)
+  * Timing for expression evaluation (remote and local)
+  * Prompt exception inspection (click on it)
+  * A new shell mode and an executable `wdb`
+  * A new multiline prompt mode triggered by `[ctrl]` + `[enter]`
+  * And a lot of bug fixes
+
+
+For more features see the [last wdb 2.0 post](/2014/05/12/wdb-2.html) and the [github readme page](https://github.com/Kozea/wdb).
