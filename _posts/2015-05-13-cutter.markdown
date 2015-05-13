@@ -50,7 +50,7 @@ numbers = [
 
 There are two syntaxic sugars for an even easier use:
 
-### The _| syntax
+### The |_ syntax
 
 ```python
 from cutter import _
