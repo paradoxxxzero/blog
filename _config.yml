@@ -1,5 +1,5 @@
 name: paradoxxx zero
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 description: Random interesting things
 url: http://paradoxxxzero.github.io

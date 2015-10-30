@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Announcing butterfly 2.0"
+tags: [projects, butterfly, websocket, coffeescript, python, sass, themes, 16M colors]
+class: butterfly
+---
+
+After 1 year and a half of waiting butterfly 2.0 is finally here!
+
+![butterfly screen cast](/assets/butterfly_2.0_1.gif)
+
+For those who don't know butterfly is an open source in-browser nix terminal written in coffeescript (yeah I know, maybe I will port it to ES7 but you know... braces) and backed up by a python tornado server.
+
+
+## Features
+
+Its feature list keep on growing:
+
+* xterm compatible (support a lot of unused features!)
+* Native browser scroll and search
+* Theming in css / sass [(18 preset themes)](https://github.com/paradoxxxzero/butterfly-themes) endless possibilities!
+* HTML in your terminal! cat images and use &lt;table&gt;
+* Multiple sessions support (à la screen -x) to simultaneously access a terminal from several places on the planet!
+* Secure authentication with X509 certificates!
+* 16,777,216 colors support!
+* Keyboard text selection!
+* Desktop notifications on terminal output!
+* Geolocation from browser!
+* May work on firefox too!
+
+
+## Give it a shot
+
+It's even easier to try it now, just:
+
+```bash
+    $ pip install butterfly
+    $ pip install libsass  # If you want to use themes
+    $ butterfly
+```
+
+A new tab should appear in your browser. Then type
+
+```bash
+    $ butterfly help
+```
+
+To get an overview of butterfly features.
+
+For everyday use, it's better to use a server see below.
+
+
+## Moar
+
+Go to the [github page](https://github.com/paradoxxxzero/butterfly) for more informations, like setting up a server using systemd (I know I know) or why not contributing!
+
+Take a look at existing themes at [butterfly-themes](https://github.com/paradoxxxzero/butterfly-themes) and current demos showing the butterfly potential at [butterfly-demos](https://github.com/paradoxxxzero/butterfly-demos).
+
+### End
+
+We are in 2015, we can finally display images and html in a terminal and use 16M colors, what a world we are living in.
