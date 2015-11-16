@@ -11,6 +11,7 @@ There's something I've been working on recently, at start just for fun but it tu
 ![butterfly screen cast](/assets/butterfly_1.gif)
 #### **butterfly** your everyday terminal right in your browser
 
+# [Version 2.0 has been released please see here]({% post_url 2015-10-30-butterfly_2.0 %})
 
 ## Try it
 
