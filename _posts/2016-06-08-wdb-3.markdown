@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "wdb 3.0 material style"
+tags: [projects, wdb, debugger, python, websocket, material]
+class: wdb
+---
+
+The future is here! wdb 3.0 is out get it while it's hot (and certainly bugged)
+
+
+![Material wdb](https://camo.githubusercontent.com/4cd1a4503682803966e706dec1de84b0d178da29/68747470733a2f2f7261772e6769746875622e636f6d2f4b6f7a65612f7764622f6d61737465722f7764622e706e67)
+
+## Changes
+
+ * A whole new material design lite interface (a bit responsive)
+ * Clickable icons instead of hotkeys only
+ * Visual distinction between stepping, post_mortem and shell
+ * An actually readable help (you can get by clicking on the help icons)
+ * A code mirror prompt with syntaxic coloration and more classic completion
+ * New commands (open current file in external editor, respawn current process...)
+ * A far better post mortem interaction when using ext and wdb is disabled.
+ * `importmagic` suggestions on NameError
+ * Use of `uncompyle6` to get python source when only byte-code is available
+
+
+For more information about wdb, see [previous post](/2014/05/12/wdb-2.html)
