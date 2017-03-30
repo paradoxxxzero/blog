@@ -5,7 +5,7 @@ title: About
 
 ### Who am I ?
 
-My name is Florian Mounier, I'm 28 and I live in Lyon, France.
+My name is Florian Mounier, I'm 30 and I live in Lyon, France.
 
 I work at [kozea](http://kozea.fr/) and I graduated from [INSA Lyon](http://www.groupe-insa.fr/en) in 2009.
 
@@ -15,7 +15,9 @@ I work at [kozea](http://kozea.fr/) and I graduated from [INSA Lyon](http://www.
 You can tip me:
 
  * [![Flattr](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=paradoxxx_zero&url=http://paradoxxxzero.github.io&title=paradoxxxzero)
- * [![gittip](http://i.imgur.com/IKcQB2P.png)](https://www.gittip.com/paradoxxxzero/)
+ * 
+ 
+ <script data-gratipay-username="paradoxxxzero" src="//grtp.co/v1.js"></script>
 
 Paypal:
 
